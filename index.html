@@ -60,6 +60,46 @@
             width: 100%;
             height: auto;
         }
+
+        .reviews-section {
+            width: 100%;
+            overflow: hidden;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .reviews-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .reviews-container {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+        .review {
+            flex: 0 0 80%;
+            max-width: 80%;
+            margin-right: 20px;
+            scroll-snap-align: start;
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .review:last-child {
+            margin-right: 0;
+        }
+        .review-content {
+            font-size: 16px;
+        }
+        .review-author {
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+        
         footer {
             background-color: #333;
             color: #fff;
@@ -257,6 +297,28 @@
         <div class="container">
             <h2 class="section-title">Contatti</h2>
            <p class="section-content">Puoi contattarmi via email a ejedoji.servizi@gmail.com o tramite i miei canali social per esempio tiktok.</p>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <h2 class="reviews-title">Recensioni</h2>
+        <div class="reviews-container">
+            <div class="review">
+                <p class="review-content">"Il servizio è stato eccellente! La qualità del sito web creato supera le mie aspettative. Altamente consigliato!"</p>
+                <p class="review-author">- Marco Rossi</p>
+            </div>
+            <div class="review">
+                <p class="review-content">"Ho trovato esattamente quello che cercavo. La gestione delle mie pagine social è ora molto più semplice ed efficace."</p>
+                <p class="review-author">- Laura Bianchi</p>
+            </div>
+            <div class="review">
+                <p class="review-content">"Professionalità e creatività al top. Il video editing è stato impeccabile. Grazie per il fantastico lavoro!"</p>
+                <p class="review-author">- Giovanni Verdi</p>
+            </div>
+            <div class="review">
+                <p class="review-content">"Servizio clienti eccellente e tempi di consegna rapidissimi. Sono estremamente soddisfatto del sito web realizzato."</p>
+                <p class="review-author">- Sofia Neri</p>
+            </div>
         </div>
     </section>
 
